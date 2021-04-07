@@ -8,9 +8,9 @@ Deploy of static website using Nginx running as non-root user on Alpine (very li
 
 This project is intended to be used along with a proxy container such as [my docker-webproxy](https://gitlab.com/andresouzaabreu/docker-webproxy) and a network to connect this container to the proxy container.
 
-1 - Create a network with a proxy container.
-2 - Put your static website under the directory `./websites` in this repo.
-3 - Run `docker-compose up -d` and that's it.
+1. Create a network with a proxy container.
+2. Put your static website under the directory `./websites` in this repo.
+3. Run `docker-compose up -d` and that's it.
 
 ### Without proxy container
 
