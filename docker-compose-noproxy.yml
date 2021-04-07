@@ -1,0 +1,13 @@
+version: "2.0"
+services:
+  website:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: static-website
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    volumes:
+      - ./website:/var/www/html
+    ports:
+      - 8080:8080
