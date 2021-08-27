@@ -13,7 +13,7 @@ services:
       - LETSENCRYPT_EMAIL=${EMAIL}
     restart: unless-stopped
     volumes:
-      - ./website:/var/www/html
+      - ${WEBSITE_FILES}:/var/www/html:ro
 networks:
   default:
     external:
